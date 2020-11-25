@@ -94,5 +94,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\IPI PAN\WPF\wpf1\wpf1\ShopLib\ShopLib\ShopLib.csproj">
+      <Project>{7276abd3-5615-4bf3-9130-f29757979ed1}</Project>
+      <Name>ShopLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
