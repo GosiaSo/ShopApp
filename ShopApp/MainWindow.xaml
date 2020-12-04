@@ -7,6 +7,35 @@
         mc:Ignorable="d"
         Title="My first app" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="labelKlient" Content="Klienci" HorizontalAlignment="Left" Margin="10,0"  
+               Grid.Column="0" Grid.Row="0"/>
+        <ListBox x:Name="listBoxKlienci" HorizontalAlignment="Left" Height="100" Margin="10,0,10,0" 
+                 Grid.Column="0" Grid.Row="1" VerticalAlignment="Top" Width="366"/>
+
+        <!--#region 3 buttons-->
+        <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Margin="10,121,387,126">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="33*"/>
+                <ColumnDefinition Width="33*"/>
+                <ColumnDefinition Width="33*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="buttonOdswiez" Content="Odśwież" Grid.Column="0" Margin="10,0,10,0" />
+            <Button x:Name="buttonUsuńKlienta" Content="Usuń" Grid.Column="1" Margin="10,0,10,0" />
+            <Button x:Name="buttonRejestruj" Content="Rejestruj" Grid.Column="2" Margin="10,0,10,0" />
+        </Grid>
+        <!--#endregion-->
     </Grid>
 </Window>
